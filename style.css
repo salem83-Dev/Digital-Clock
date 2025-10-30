@@ -44,8 +44,15 @@ body {
   margin-top: 25px;
 }
 
-span {
-  color: #34E7F8;
+.sign span {
+    color: #eee;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.sign span:hover {
+    color: #34E7F8;
 }
 
     .social-links {
@@ -54,7 +61,7 @@ span {
         gap: 25px;
         margin-top: 25px;
     }
-    
+
     .social-links a {
         color: #a0aec0;
         font-size: 1.5rem;
