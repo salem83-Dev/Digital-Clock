@@ -3,7 +3,7 @@
 A modern **digital clock** built with **HTML, CSS, and JavaScript**.  
 It shows **real-time hours, minutes, seconds, AM/PM**, full date, and day of the week with a sleek, responsive design.  
 
-**Live Demo:** [Click Here To View](https://your-demo-link.com](https://salem83-dev.github.io/Digital-Clock/)
+**Live Demo:** [Click Here To View] (https://salem83-dev.github.io/Digital-Clock/)
 
 ---
 
