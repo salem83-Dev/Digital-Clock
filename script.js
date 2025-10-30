@@ -1,9 +1,6 @@
 function updateClock() {
-
     let h3 = document.getElementById("clock");
-
     let now = new Date();
-
     let hours = now.getHours();
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
@@ -11,8 +8,14 @@ function updateClock() {
     let month = now.getMonth() + 1;
     let date = now.getDate();
     let day = now.getDay();
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-    let day_name = days[day];
+    const dayli = document.querySelectorAll(".days-names li");
+
+    for (let i = 0; i < dayli.length; i++) {
+        // dayli[i].classList.r;
+        if (day === i){
+            dayli[i].classList="active";
+        }
+    }
 
     if (month < 10) {
         month = "0" + month;
@@ -26,7 +29,7 @@ function updateClock() {
     }
 
     let ampm = "AM";
-    if (hours > 12) {
+    if (hours >= 12) {
         hours = hours - 12;
         ampm = "PM";
     }
@@ -39,7 +42,7 @@ function updateClock() {
     h3.innerText = now;
 
     let h4 = document.getElementById("full_year");
-    let full_date = full_year  + "/" + month + "/" + date + " | " + day_name;
+    let full_date = full_year  + " / " + month + " / " + date ;
     h4.innerText = full_date;
 }
 
