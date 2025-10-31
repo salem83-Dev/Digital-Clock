@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
 
 body {
     background-color: #202839;
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     font-family: 'Orbitron', 'Courier New', monospace;
 }
