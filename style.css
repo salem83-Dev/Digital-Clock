@@ -108,8 +108,7 @@ body {
     transform: translateY(-5px);
 }
 
-
-/* responsive */
+/* Responsive Design */
 @media (max-width: 600px) {
     .container {
         min-width: 0;
@@ -123,12 +122,12 @@ body {
     }
 
     .container .digital-clock {
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: 2px;
     }
 
     .container .days-names {
-        gap: 15px;
+        gap: 7px;
     }
 
     .container .days-names li {
@@ -140,14 +139,17 @@ body {
     }
 }
 
+
 @media (max-width: 380px) {
     .container .digital-clock {
-        font-size: 2.3rem;
+
+        font-size: 2.1rem;
         letter-spacing: 1px;
     }
 
     .container .days-names {
-        gap: 10px;
+        gap: 8px;
+        flex-wrap: wrap;
     }
 
     .container .days-names li {
@@ -160,5 +162,9 @@ body {
 
     .title {
         font-size: 1.8rem;
+    }
+
+    .sign .span{
+    font-weight: 300;
     }
 }
